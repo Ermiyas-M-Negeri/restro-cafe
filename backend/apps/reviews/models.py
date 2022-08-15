@@ -1,7 +1,7 @@
 from django.db import models
 from apps.items.models import Item
 
-# Create your models here.
+
 class Review(models.Model):
     class Meta(object):
         db_table = 'review'

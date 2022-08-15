@@ -4,7 +4,7 @@ from .serializers import ReviewSerializer
 from django_filters.rest_framework import DjangoFilterBackend
 from .models import Review
 
-# Create your views here.
+
 class ReviewList(generics.ListAPIView):
     queryset = Review.objects.order_by('-created_at').all()
     serializer_class = ReviewSerializer

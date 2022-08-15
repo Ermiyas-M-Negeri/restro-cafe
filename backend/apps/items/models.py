@@ -2,7 +2,7 @@ from django.db import models
 from cloudinary.models import CloudinaryField
 from config.constants import *
 
-# Create your models here.
+
 class Item(models.Model):
     class Meta(object):
         db_table = 'item'
